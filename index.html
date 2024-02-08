@@ -1,41 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Demo</title>
-    <link rel="stylesheet" href="app.css">
-    <script src="app.js"></script>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
 </head>
+
 <body>
-    <div class="pagewrapper">
-
-        <section class="left">
-
-            <div class="certificate">
-                <span id="nameOutput">test name</span>
-                <span id="info">test info</span>
-            </div>
+    <main class="">
+        <section class="">
 
         </section>
 
-        <section class="right">
+        <section class="">
 
             <form action="" id="myForm">
-    
-                <input type="text" name="name" id="name" placeholder="Name">
-        
+
+                <input type="text" name="name" id="name" placeholder="Enter a name here.">
+
                 <select name="type" id="type">
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
+                    <option value="Certificate">Worst Music Taste</option>
+                    <option value="Certificate">The Punchline of Every Joke</option>
+                    <option value="Certificate">Bear With Me</option>
                 </select>
-                <input type="submit" value="Generate">
+                <input type="submit" value="Please, submit a name.">
 
             </form>
         </section>
 
-    </div>    
+
+
+        <article class="visiable" id="musicCert" role="">
+            <h2 class="header2">Worst Music<br> Taste</h2>
+            <h3 class="header3">Awarded To:</h3>
+            <section class="certificate" id="certificate">
+                <span id="nameOutput" class="visiable"></span>
+                <span id="info">'s Certificates</span>
+            </section>
+            <p id="description">For the people that has no clue what<br> good music sounds like.</p>
+            <section class="row" id="">
+                <p class="date">Date</p>
+                <p class="signer">Aubrey Drake Graham</p>
+            </section>
+        </article>
+
+        <article class="visiable" id="jokeCert">
+            <h2 class="header2" id="">The Punchline of Every Joke</h2>
+            <h3 class="header3" id="">Awarded To:</h3>
+            <section class="certificate" id="certificate">
+                <span id="nameOutput" class="visiable"></span>
+                <span id="info">'s Certificates</span>
+            </section>
+            <p class="description">To the person that is always the punchline of a joke</p>
+            <section class="row" id="">
+                <p class="date">Date</p>
+                <p class="signer">James Thomas Fallon</p>
+            </section>
+        </article>
+
+        <article class="visiable" id="boredCert">
+            <h2 class="header2">Bear With Me</h2>
+            <h3 class="header3">Awarded To:</h3>
+            <section class="certificate" id="certificate">
+                <span id="nameOutput" class="visiable"></span>
+                <span id="info">'s Certificates</span>
+            </section>
+            <p class="description">to the person with the least interesting stories.</p>
+            <section class="row" id="">
+                <p class="date">Date</p>
+                <p class="signer">Louis Manuel McManus</p>
+            </section>
+        </article>
 </body>
+
 </html>
