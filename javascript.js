@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // check for buttons exist
-    if ( document.querySelectorAll('.button') !== null) {
+    if (document.querySelectorAll('.button') !== null) {
         let buttons = document.querySelectorAll('.button');
         buttons.forEach(button => button.addEventListener('click', processForm))
     }
@@ -36,36 +36,49 @@ document.addEventListener("DOMContentLoaded", function () {
         nameOutput.innerText = formData.name;
         info.innerText = formData.type;
 
-      });
+    });
     // Log readiness to console
     console.log("Ready");
 
     // let info = document.getElementById('info');
     // info.classList.add('test');
-    
-    
-    
+
+
+
     // certificate.classList.add('number1');
-    
-    function changeCert(value){
+
+    function changeCert(value) {
         let certificate = document.getElementById('certificate');
+        let signer = document.getElementById('signer');
+        let about = document.getElementById('description');
+        let header = document.getElementById('header2');
+        let back = document.getElementById('cert');
+        let date = document.getElementById('date');
+        let award = document.getElementById('header3');
         certificate.classList = ""; // clear classes on each function call
-        switch(value){
+        switch (value) {
             case 'A':
-                certificate.classList.add('number1');
-            break;
+                back.style.backgroundImage = 'url(images/music-background.png)';
+                header.innerText = "Worst Music";
+                about.innerText = "For the people that has no clue what good music sounds like.";
+                signer.innerText = "Aubrey Drake Graham";
+                break;
             case 'B':
-                certificate.classList.add('number2');
-            break;
+                back.style.backgroundImage = 'url(images/certificate.png)';
+                header.innerText = "The Punchline of Every Joke";
+                about.innerText = "To the person that is always the punchline of a joke";
+                signer.innerText = "James Thomas Fallon";
+                break;
             case 'C':
-                certificate.classList.add('number3');
-            break;
-            case 'D':
-                certificate.classList.add('number4');
-            break;
+                back.style.backgroundImage = 'url(images/certificate.png)';
+                header.innerText = "Bear With Me";
+                about.innerText = "To the person with the least interesting stories.";
+                signer.innerText = "Louis Manuel McManus";
+                break;
         }
     }
 });
+
 
 /* Additional things to be aware of */
 
@@ -74,6 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-function processForm(form){
+function processForm(form) {
 
 }
