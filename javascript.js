@@ -43,7 +43,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // let info = document.getElementById('info');
     // info.classList.add('test');
 
-
+    //date
+    let theDate = new Date().toLocaleDateString('en-us', { weekday:"long",
+    year:'numeric', month:"numeric", day:'numeric'})
+    //formats the date
+    let dateBox = document.getElementById('theDate');
+    dateBox.innerText = theDate
 
     // certificate.classList.add('number1');
 
@@ -55,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let back = document.getElementById('cert');
         let date = document.getElementById('date');
         let award = document.getElementById('header3');
+        let logo = document.getElementById('logo');
         certificate.classList = ""; // clear classes on each function call
         switch (value) {
             case 'A':
@@ -65,6 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 break;
             case 'B':
                 back.style.backgroundImage = 'url(images/certificate.png)';
+                logo.image = 'url(images/certificate.png)';
+                logo.style.backgroundImage = '';
                 header.innerText = "The Punchline of Every Joke";
                 about.innerText = "To the person that is always the punchline of a joke";
                 signer.innerText = "James Thomas Fallon";

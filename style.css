@@ -15,9 +15,10 @@
     background-image: url(images/music-background.png);
     background-size: contain;
     background-repeat: no-repeat;
-    align-content: center;
     width: 1100px;
     height: 850px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #header2 {
@@ -43,4 +44,7 @@
 #date {
     text-decoration: underline;
     font-size: 2cqb;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
 }
