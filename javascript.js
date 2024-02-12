@@ -43,9 +43,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // let info = document.getElementById('info');
     // info.classList.add('test');
 
+    //print
+    if (document.getElementById('print') !== null) {
+        let printElement = document.getElementById('print');
+        printElement.addEventListener('click', function (e) {
+            window.prompt();
+            console.log('invoke print');
+        })
+    }
+
     //date
-    let theDate = new Date().toLocaleDateString('en-us', { weekday:"long",
-    year:'numeric', month:"numeric", day:'numeric'})
+    let theDate = new Date().toLocaleDateString('en-us', {
+        weekday: "long",
+        year: 'numeric', month: "numeric", day: 'numeric'
+    })
     //formats the date
     let dateBox = document.getElementById('theDate');
     dateBox.innerText = theDate
@@ -58,27 +69,26 @@ document.addEventListener("DOMContentLoaded", function () {
         let about = document.getElementById('description');
         let header = document.getElementById('header2');
         let back = document.getElementById('cert');
-        let date = document.getElementById('date');
-        let award = document.getElementById('header3');
         let logo = document.getElementById('logo');
         certificate.classList = ""; // clear classes on each function call
         switch (value) {
             case 'A':
                 back.style.backgroundImage = 'url(images/music-background.png)';
+                logo.style.backgroundImage = 'url(images/record.png)';
                 header.innerText = "Worst Music";
                 about.innerText = "For the people that has no clue what good music sounds like.";
                 signer.innerText = "Aubrey Drake Graham";
                 break;
             case 'B':
                 back.style.backgroundImage = 'url(images/certificate.png)';
-                logo.image = 'url(images/certificate.png)';
-                logo.style.backgroundImage = '';
+                logo.style.backgroundImage = 'url(images/funny-award.png)';
                 header.innerText = "The Punchline of Every Joke";
                 about.innerText = "To the person that is always the punchline of a joke";
                 signer.innerText = "James Thomas Fallon";
                 break;
             case 'C':
                 back.style.backgroundImage = 'url(images/certificate.png)';
+                logo.style.backgroundImage = 'url(images/best-actor-award.png)';
                 header.innerText = "Bear With Me";
                 about.innerText = "To the person with the least interesting stories.";
                 signer.innerText = "Louis Manuel McManus";

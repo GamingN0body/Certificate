@@ -3,10 +3,15 @@
     justify-content: space-between;
 }
 
-.certificate {
-    text-align: center;
-    font-size: 5rem;
+#logo {
+    background-image: url(images/record.png);
+    background-size: 10rem;
+}
+
+#nameOutput, #certificate {
     text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
 }
 
 #cert {
@@ -41,7 +46,7 @@
 }
 
 #signer,
-#date {
+#theDate {
     text-decoration: underline;
     font-size: 2cqb;
     justify-content: space-evenly;
