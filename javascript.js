@@ -1,9 +1,25 @@
+function getId(id){//makes it easier to read
+    return document.getElementById(id);
+}
+
+function getElements(selector) {
+    return document.querySelectorAll(selector);
+}
+
 // Add Event listners when DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
+    
+console.log(getId('certificate'));
+
+getElements('.button').forEach((button)) => {button.classList.add('red'); button.addEventListener('click', event =>){//will make things look cool and add stuff}
+    //abstraction simplifing things
+    //make code simple
+
+}}
 
     // check for buttons exist
     if (document.querySelectorAll('.button') !== null) {
-        let buttons = document.querySelectorAll('.button');
+        let buttons = document.querySelectorAll('.button');//takes 
         buttons.forEach(button => button.addEventListener('click', processForm))
     }
 
